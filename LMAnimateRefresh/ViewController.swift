@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     }
     
     func btnEvent(){
-        print("btnEvent")
+        print("btnEvent", terminator: "")
     }
 
     override func didReceiveMemoryWarning() {

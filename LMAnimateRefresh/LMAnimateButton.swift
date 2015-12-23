@@ -91,7 +91,7 @@ class LMAnimateButton: UIControl {
         initSettingWithColor(color)
     }
     // ???
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initSettingWithColor(self.tintColor)
     }
@@ -134,7 +134,7 @@ class LMAnimateButton: UIControl {
         self.spinnerView.tintColor = UIColor.whiteColor()
         self.spinnerView.lineWidth = 1
         self.spinnerView.center = CGPointMake(CGRectGetMidX(self.layer.bounds), CGRectGetMidY(self.layer.bounds))
-        self.spinnerView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.spinnerView.translatesAutoresizingMaskIntoConstraints = false
         self.spinnerView.userInteractionEnabled = false
         self.addSubview(self.spinnerView)
         
